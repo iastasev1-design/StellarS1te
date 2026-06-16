@@ -1,0 +1,48 @@
+[
+  {
+    "id": "yanacujy",
+    "username": "yanacujy",
+    "passwordHash": "0e9b7938220a6ba9f066b6bc71dde72a6b91c6439eaed0b6d6c485edd3b5802e",
+    "name": "yanacujy",
+    "email": "gua1mis6@mail.ru",
+    "group": "Админ",
+    "createdAt": "2026-06-16T19:29:00.173Z",
+    "hwid": "Не привязан",
+    "uid": "STLR-8DD813C3",
+    "banned": false,
+    "banReason": "",
+    "subscription": null,
+    "avatar": ""
+  },
+  {
+    "id": "mef",
+    "username": "mef",
+    "passwordHash": "8d708f5fec740179edfe2ff166a779c34c24c8409114c12c1cce6a3b30feac72",
+    "name": "mef",
+    "email": "sserii627@gmail.com",
+    "group": "Админ",
+    "createdAt": "2026-06-16T20:00:00.000Z",
+    "hwid": "Не привязан",
+    "uid": "STLR-ABCD1234",
+    "banned": false,
+    "banReason": "",
+    "subscription": null,
+    "avatar": ""
+  },
+  {
+    "id": "1875d674-f67f-49e2-a5ad-012fe36cc7aa",
+    "username": "lendixxx",
+    "passwordHash": "d6df22bbc5813f1cc1d5efac76c34e79545af97911377eed37a403d804f1f1b7",
+    "name": "lendixxx",
+    "email": "iastasev1@gmail.com",
+    "group": "Пользователь",
+    "createdAt": "2026-06-16T19:34:01.645Z",
+    "hwid": "Не привязан",
+    "uid": "STLR-54FF7007",
+    "banned": false,
+    "banReason": "",
+    "subscription": null,
+    "avatar": "",
+    "updatedAt": "2026-06-16T19:34:30.177Z"
+  }
+]

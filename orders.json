@@ -1,0 +1,75 @@
+[
+  {
+    "id": "8ab3ef7e-b41f-4b1c-80bb-b4910d3ec1f5",
+    "productId": "year",
+    "productName": "Год",
+    "contact": "demo",
+    "createdAt": "2026-05-15T10:00:08.997Z",
+    "status": "new"
+  },
+  {
+    "id": "7bcb9cb8-40fc-4eed-a1aa-743355a70891",
+    "productId": "hwid-reset",
+    "productName": "Сброс HWID",
+    "contact": "demo",
+    "createdAt": "2026-05-15T10:00:11.266Z",
+    "status": "new"
+  },
+  {
+    "id": "dcf18731-a47c-4e14-bb55-39e617885d15",
+    "productId": "month",
+    "productName": "Месяц",
+    "price": 199,
+    "totalPrice": 199,
+    "paymentProvider": "funpay",
+    "receiptEmail": "iastasev1@gmail.com",
+    "promoCode": "",
+    "promo": {
+      "code": "",
+      "title": "",
+      "discountPercent": 0,
+      "applied": false
+    },
+    "contact": "deffffff",
+    "createdAt": "2026-06-16T17:27:30.194Z",
+    "status": "paid"
+  },
+  {
+    "id": "00874be9-e756-4221-bc45-7a761cbe5e3e",
+    "productId": "year",
+    "productName": "Год",
+    "price": 449,
+    "totalPrice": 449,
+    "paymentProvider": "funpay",
+    "receiptEmail": "gua1asdas@gmail.com",
+    "promoCode": "",
+    "promo": {
+      "code": "",
+      "title": "",
+      "discountPercent": 0,
+      "applied": false
+    },
+    "contact": "lendixxx",
+    "createdAt": "2026-06-16T18:13:17.599Z",
+    "status": "paid"
+  },
+  {
+    "id": "01f619f2-55ae-4144-b3fc-a28b09889dd5",
+    "productId": "year",
+    "productName": "Год",
+    "price": 449,
+    "totalPrice": 449,
+    "paymentProvider": "funpay",
+    "receiptEmail": "demo@core.local",
+    "promoCode": "",
+    "promo": {
+      "code": "",
+      "title": "",
+      "discountPercent": 0,
+      "applied": false
+    },
+    "contact": "demo",
+    "createdAt": "2026-06-16T19:26:45.133Z",
+    "status": "pending_payment"
+  }
+]

@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b12" />
+    <title>Stellar - выбор победителей</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=25" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Главная навигация">
+      <nav class="nav-shell">
+        <a class="brand" href="/" aria-label="Stellar">
+          <svg class="brand-mark" width="21" height="21" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="2.6" fill="currentColor" />
+            <path d="M11 3.6a8.7 8.7 0 0 0-5.4 3.1l4.1 4.1A3.7 3.7 0 0 1 11 10z" fill="currentColor" />
+            <path d="M18.4 6.7A8.7 8.7 0 0 0 13 3.6V10a3.7 3.7 0 0 1 1.3.8z" fill="currentColor" />
+            <path d="M7.2 18.6a8.7 8.7 0 0 0 9.6 0l-4.1-4.1a3.8 3.8 0 0 1-1.4 0z" fill="currentColor" />
+          </svg>
+          <span>Stellar</span>
+        </a>
+
+        <span class="nav-divider" aria-hidden="true"></span>
+
+        <a class="nav-link" href="#modules" data-i18n="nav.modules">Модули</a>
+        <a class="nav-link" href="#prices" data-i18n="nav.prices">Цены</a>
+        <a class="nav-link" href="https://t.me/stellarmanage" target="_blank" rel="noreferrer" data-i18n="nav.support">Поддержка</a>
+
+        <div class="lang-picker" id="langPicker">
+          <button class="lang-switch" id="langSwitch" type="button" aria-label="Сменить язык" aria-expanded="false" aria-haspopup="menu" aria-controls="langMenu">
+            <span id="currentLang">RU</span>
+            <svg class="lang-arrow" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" aria-label="Language">
+            <button class="lang-option" type="button" role="menuitemradio" data-lang="RU">RU</button>
+            <button class="lang-option" type="button" role="menuitemradio" data-lang="UA">UA</button>
+            <button class="lang-option" type="button" role="menuitemradio" data-lang="EN">EN</button>
+            <button class="lang-option" type="button" role="menuitemradio" data-lang="PL">PL</button>
+          </div>
+        </div>
+        <button class="ghost-button" id="openLogin" type="button" data-i18n="auth.login">Войти</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <h1 id="heroTitle">
+            <span class="hero-line">
+              <span class="core-word">Stellar</span><span class="hero-dash"></span><span data-i18n="hero.word1">выбор</span>
+            </span>
+            <span class="hero-line" data-i18n="hero.word2">победителей</span>
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Мощный клиент для уверенной игры и стабильного результата на серверах Minecraft.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-button" id="heroLogin" type="button">
+              <span data-i18n="auth.login">Войти</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <a class="support-button" id="supportButton" href="https://t.me/stellarmanage" target="_blank" rel="noreferrer" data-i18n="nav.support">Поддержка</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-panel modules-panel" id="modules" aria-labelledby="modulesTitle">
+        <div class="section-heading">
+          <h2 id="modulesTitle" data-i18n-html="modules.title">Мы предоставляем только<br />лучшие функции.</h2>
+          <p data-i18n="modules.subtitle">Постоянно растущий функционал с огромным количеством обходов</p>
+        </div>
+
+        <div class="module-grid">
+          <article class="info-card">
+            <span class="card-index">0 1</span>
+            <h3>KillAura</h3>
+            <p data-i18n="modules.cards.killaura">Быстрая и стабильная работа в PvP сценариях.</p>
+          </article>
+
+          <article class="info-card">
+            <span class="card-index">0 2</span>
+            <h3>Spider</h3>
+            <p data-i18n="modules.cards.spider">Лучший из лучших, выполняет свою работу очень быстро и отлично.</p>
+          </article>
+
+          <article class="info-card">
+            <span class="card-index">0 3</span>
+            <h3>Speed</h3>
+            <p data-i18n="modules.cards.speed">Ускорение с настройками для разных игровых ситуаций.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-panel products-panel" id="prices" aria-labelledby="pricesTitle">
+        <div class="section-heading">
+          <h2 id="pricesTitle" data-i18n="products.title">Товары.</h2>
+          <p data-i18n="products.subtitle">Выберите подходящий тариф.</p>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="brand" href="/" aria-label="Stellar">
+              <svg class="brand-mark" width="21" height="21" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="2.6" fill="currentColor" />
+                <path d="M11 3.6a8.7 8.7 0 0 0-5.4 3.1l4.1 4.1A3.7 3.7 0 0 1 11 10z" fill="currentColor" />
+                <path d="M18.4 6.7A8.7 8.7 0 0 0 13 3.6V10a3.7 3.7 0 0 1 1.3.8z" fill="currentColor" />
+                <path d="M7.2 18.6a8.7 8.7 0 0 0 9.6 0l-4.1-4.1a3.8 3.8 0 0 1-1.4 0z" fill="currentColor" />
+              </svg>
+              <span>Stellar</span>
+            </a>
+            <p>Мощный клиент для уверенной игры и стабильного результата на серверах Minecraft.</p>
+          </div>
+
+          <nav class="footer-column" aria-label="Продукт">
+            <span>Продукт</span>
+            <a href="#prices">Покупка</a>
+            <a href="https://t.me/stellarmanage" target="_blank" rel="noreferrer">Поддержка</a>
+          </nav>
+
+          <nav class="footer-column" aria-label="Правовая информация">
+            <span>Правовая информация</span>
+            <a href="/terms.html">Условия пользования</a>
+            <a href="/privacy.html">Политика конфиденциальности</a>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 - stellarmanage. Все права защищены.</span>
+          <a href="https://t.me/stellarmanage" target="_blank" rel="noreferrer">Telegram</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="auth-modal" id="authModal">
+      <form class="auth-panel" id="authForm">
+        <button class="close-button" id="closeLogin" type="button" aria-label="Закрыть" data-i18n-attr="aria-label:auth.close">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <h2 class="auth-title" id="authTitle">Вход</h2>
+
+        <div class="auth-tabs" role="tablist" aria-label="Авторизация">
+          <button class="auth-tab is-active" id="loginTab" type="button" role="tab" aria-selected="true" data-auth-mode="login" data-i18n="auth.login">Вход</button>
+          <button class="auth-tab" id="registerTab" type="button" role="tab" aria-selected="false" data-auth-mode="register" data-i18n="auth.register">Регистрация</button>
+        </div>
+
+        <label class="auth-field">
+          <span data-i18n="auth.username">Логин</span>
+          <input name="username" autocomplete="username" placeholder="Логин" data-i18n-attr="placeholder:auth.username" required />
+        </label>
+
+        <label class="auth-field register-only-field" id="emailField" aria-hidden="true">
+          <span data-i18n="auth.email">Почта</span>
+          <input name="email" type="email" autocomplete="email" placeholder="Почта" data-i18n-attr="placeholder:auth.email" />
+        </label>
+
+        <label class="auth-field">
+          <span data-i18n="auth.password">Пароль</span>
+          <input name="password" type="password" autocomplete="current-password" placeholder="Пароль" data-i18n-attr="placeholder:auth.password" required />
+        </label>
+
+        <label class="auth-field register-only-field confirm-field" id="confirmField" aria-hidden="true">
+          <span data-i18n="auth.confirmPassword">Повторите пароль</span>
+          <input name="confirmPassword" type="password" autocomplete="new-password" placeholder="Повторите пароль" data-i18n-attr="placeholder:auth.confirmPassword" />
+        </label>
+
+        <button class="auth-submit" id="authSubmit" type="submit">Войти</button>
+
+        <p class="auth-status" id="authStatus" role="status"></p>
+      </form>
+    </dialog>
+
+    <dialog class="checkout-modal" id="checkoutModal">
+      <form class="checkout-panel" id="checkoutForm">
+        <button class="close-button" id="closeCheckout" type="button" aria-label="Закрыть">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <div class="checkout-head">
+          <span class="checkout-kicker" id="checkoutKicker">Оформление покупки</span>
+          <h2 id="checkoutTitle">Stellar</h2>
+          <p id="checkoutDescription">Выберите способ оплаты и укажите почту для чека.</p>
+        </div>
+
+        <div class="checkout-summary">
+          <div>
+            <span id="checkoutProductLabel">Товар</span>
+            <strong id="checkoutProductName">-</strong>
+          </div>
+          <div>
+            <span id="checkoutPriceLabel">К оплате</span>
+            <strong id="checkoutPrice">-</strong>
+          </div>
+        </div>
+
+        <!-- Только FunPay -->
+        <div class="checkout-methods" role="radiogroup" aria-label="Способ оплаты">
+          <label class="checkout-method">
+            <input type="radio" name="paymentProvider" value="funpay" checked />
+            <span>
+              <strong>FunPay</strong>
+              <small id="checkoutFunPayText">Оплата через маркетплейс FunPay.</small>
+            </span>
+          </label>
+        </div>
+
+        <label class="checkout-field">
+          <span id="checkoutEmailLabel">Почта для чека</span>
+          <input name="receiptEmail" type="email" autocomplete="email" placeholder="mail@example.com" required />
+        </label>
+
+        <label class="checkout-field">
+          <span id="checkoutPromoLabel">Промокод</span>
+          <input name="promoCode" autocomplete="off" placeholder="Если есть" />
+        </label>
+
+        <button class="checkout-submit" id="checkoutSubmit" type="submit">Оформить заказ</button>
+        <p class="checkout-status" id="checkoutStatus" role="status"></p>
+      </form>
+    </dialog>
+
+    <dialog class="account-modal" id="accountModal">
+      <section class="account-panel" aria-labelledby="accountTitle">
+        <header class="account-head">
+          <div>
+            <h2 id="accountTitle">Личный кабинет</h2>
+            <p id="accountSubtitle">Управление аккаунтом, подпиской и заказами.</p>
+          </div>
+          <button class="account-close" id="closeAccount" type="button" aria-label="Закрыть">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="account-standard" id="accountStandard">
+        <div class="account-user">
+          <button class="account-avatar" id="accountAvatarButton" type="button" aria-label="Изменить аватар">
+            <span id="accountAvatar">S</span>
+          </button>
+          <input class="account-avatar-input" id="accountAvatarInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif" />
+          <div>
+            <strong id="accountName">Stellar</strong>
+            <span id="accountEmail">stellar@stellar.local</span>
+          </div>
+        </div>
+
+        <section class="account-section">
+          <div class="account-section-title">Активные подписки</div>
+          <div class="subscription-row">
+            <div>
+              <strong id="subscriptionTitle">Нет активных подписок</strong>
+              <span id="subscriptionMeta">Выберите тариф в магазине.</span>
+            </div>
+            <a class="account-primary" href="#prices" id="accountToProducts">Перейти к продуктам</a>
+          </div>
+        </section>
+
+        <section class="account-section">
+          <div class="account-section-title">Личные данные</div>
+          <dl class="account-data">
+            <div><dt>ID</dt><dd id="accountId">-</dd></div>
+            <div><dt>Группа</dt><dd id="accountGroup">Пользователь</dd></div>
+            <div><dt>Логин</dt><dd id="accountLogin">-</dd></div>
+            <div><dt>Почта</dt><dd id="accountMail">-</dd></div>
+            <div><dt>Дата регистрации</dt><dd id="accountCreated">-</dd></div>
+            <div><dt>HWID</dt><dd id="accountHwid">Не привязан</dd></div>
+          </dl>
+          <div class="account-tools">
+            <!-- КНОПКА СКАЧИВАНИЯ ЛАУНЧЕРА -->
+            <a class="account-secondary" href="/StellarLauncherSetup.exe" download id="accountLauncher" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 20px;border-radius:999px;background:linear-gradient(135deg,#8060ef 0%,#7356ea 100%);color:#fff;border:0;font-weight:800;font-size:13px;cursor:pointer;">Скачать лаунчер</a>
+            <button class="account-exit" id="logoutAccount" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Выйти
+            </button>
+          </div>
+        </section>
+
+        <section class="account-section admin-entry" id="adminEntry" hidden>
+          <div class="account-section-title">Администрирование</div>
+          <div class="subscription-row">
+            <div>
+              <strong>Админ-панель</strong>
+              <span>Пользователи, подписки, баны, UID, HWID и ключи.</span>
+            </div>
+            <button class="account-primary" id="openAdminPanel" type="button">Открыть</button>
+          </div>
+        </section>
+
+        <section class="account-section">
+          <div class="account-section-title">Активация ключа</div>
+          <form class="account-inline-form" id="keyForm">
+            <input name="activationKey" placeholder="Введите ключ активации" autocomplete="off" />
+            <button class="account-primary" type="submit">Активировать ключ</button>
+          </form>
+          <p class="account-status" id="keyStatus" role="status"></p>
+        </section>
+
+        <section class="account-section">
+          <div class="account-section-title">Сброс пароля</div>
+          <form class="password-form" id="passwordForm">
+            <input name="currentPassword" type="password" placeholder="Текущий пароль" autocomplete="current-password" required />
+            <input name="nextPassword" type="password" placeholder="Новый пароль" autocomplete="new-password" required />
+            <input name="repeatPassword" type="password" placeholder="Повторите пароль" autocomplete="new-password" required />
+            <button class="account-secondary" type="submit">Сменить пароль</button>
+          </form>
+          <p class="account-status" id="passwordStatus" role="status"></p>
+        </section>
+
+        <section class="account-section">
+          <div class="account-section-title">Последние заказы</div>
+          <div class="orders-list" id="ordersList">Заказов пока нет.</div>
+        </section>
+
+        <footer class="account-footer">
+          <div>
+            <strong>Готов убивать?</strong>
+            <span>Предоставляем лучшие решения для вашего комфорта.</span>
+          </div>
+          <a class="account-primary" href="#prices" id="accountFooterProducts">Перейти к продуктам</a>
+        </footer>
+        </div>
+
+        <section class="admin-panel" id="adminPanel" hidden>
+          <div class="admin-panel-head">
+            <div>
+              <div class="account-section-title">Панель администратора</div>
+              <h3>Управление сайтом</h3>
+              <p>Выдача подписок, генерация ключей и обслуживание аккаунтов.</p>
+            </div>
+            <button class="account-secondary" id="backToAccount" type="button">Назад</button>
+          </div>
+
+          <section class="account-section">
+            <div class="account-section-title">Действие с пользователем</div>
+            <form class="admin-form" id="adminUserActionForm">
+              <select name="targetUserId" id="adminUserSelect" aria-label="Пользователь"></select>
+              <select name="action" id="adminActionSelect" aria-label="Действие">
+                <option value="issue-subscription">Выдать подписку</option>
+                <option value="revoke-subscription">Снять подписку</option>
+                <option value="ban">Забанить</option>
+                <option value="unban">Разбанить</option>
+                <option value="reset-hwid">Сбросить HWID</option>
+                <option value="set-uid">Выдать / сменить UID</option>
+                <option value="reset-password">Сбросить пароль</option>
+                <option value="reset-email">Сбросить почту</option>
+                <option value="set-group">Изменить группу</option>
+                <option value="delete-account">Удалить аккаунт</option>
+              </select>
+              <select name="productId" id="adminActionProduct" aria-label="Продукт"></select>
+              <select name="group" id="adminActionGroup" aria-label="Группа">
+                <option value="Пользователь">Пользователь</option>
+                <option value="Админ">Админ</option>
+              </select>
+              <input name="durationDays" id="adminActionDuration" inputmode="numeric" placeholder="Дней: пусто = срок продукта, 0 = навсегда" />
+              <input name="value" id="adminActionValue" placeholder="Значение / причина / новый пароль" />
+              <button class="account-primary" type="submit">Выполнить</button>
+            </form>
+            <p class="account-status" id="adminActionStatus" role="status"></p>
+          </section>
+
+          <section class="account-section">
+            <div class="account-section-title">Генерация ключей</div>
+            <form class="admin-form" id="adminKeyGenerateForm">
+              <select name="productId" id="adminKeyProduct" aria-label="Продукт"></select>
+              <input name="durationDays" inputmode="numeric" placeholder="Дней: пусто = срок продукта, 0 = навсегда" />
+              <input name="amount" type="number" min="1" max="50" value="1" placeholder="Количество" />
+              <input name="maxActivations" type="number" min="1" max="10000" value="1" placeholder="Активаций на ключ" />
+              <input name="title" placeholder="Название ключа, необязательно" />
+              <button class="account-primary" type="submit">Сгенерировать</button>
+            </form>
+            <p class="account-status" id="adminKeyStatus" role="status"></p>
+            <div class="admin-generated" id="adminGeneratedKeys"></div>
+          </section>
+
+          <section class="account-section">
+            <div class="account-section-title">Промокоды</div>
+            <form class="admin-form" id="adminPromoForm">
+              <input name="code" placeholder="Промокод" autocomplete="off" />
+              <input name="title" placeholder="Название промокода" />
+              <input name="discountPercent" type="number" min="1" max="100" value="10" placeholder="Скидка %" />
+              <input name="maxActivations" type="number" min="1" max="10000" value="1" placeholder="Активации" />
+              <input name="expiresAt" type="datetime-local" placeholder="Срок действия" />
+              <button class="account-primary" type="submit">Создать промокод</button>
+            </form>
+            <p class="account-status" id="adminPromoStatus" role="status"></p>
+            <div class="admin-promos-list" id="adminPromosList">Загрузка...</div>
+          </section>
+
+          <section class="account-section">
+            <div class="account-section-title">Зарегистрированные пользователи</div>
+            <div class="admin-users-list" id="adminUsersList">Загрузка...</div>
+          </section>
+
+          <section class="account-section">
+            <div class="account-section-title">Последние ключи</div>
+            <div class="admin-keys-list" id="adminKeysList">Загрузка...</div>
+          </section>
+        </section>
+      </section>
+    </dialog>
+
+    <script src="/page-transitions.js?v=1"></script>
+    <script src="/app.js?v=30" type="module"></script>
+  </body>
+</html>
