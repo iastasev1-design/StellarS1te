@@ -1,0 +1,14 @@
+{
+  "name": "stellar",
+  "version": "1.0.0",
+  "description": "Stellar - выбор победителей",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "stellarmanage",
+  "license": "ISC"
+}
